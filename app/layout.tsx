@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
-import Cursor from '@/components/Cursor'
+// import Cursor from '@/components/Cursor'
 import BackgroundAnimation from '@/components/BackgroundAnimations'
 
 // Load Inter font with Next.js
@@ -23,8 +23,8 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={inter.variable}>
-      <body className={`${inter.className} cursor-none overflow-x-hidden bg-black text-white`}>
-        <Cursor />
+      <body className={`${inter.className}  overflow-x-hidden bg-black text-white`}>
+        {/* <Cursor /> */}
         <BackgroundAnimation />
         {children}
       </body>
